@@ -1,0 +1,12 @@
+.modal-content {
+  margin: 0 auto;
+  height: 84vh;
+  width: 90% !important;
+  background-color: #fff !important;
+}
+.modal-backdrop {
+  opacity: 0.75 !important;
+}
+.modal-xl {
+  --bs-modal-width: 1800px !important;
+}
