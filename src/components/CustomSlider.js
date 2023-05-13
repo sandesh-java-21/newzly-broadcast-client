@@ -16,16 +16,11 @@ class CustomSlider extends React.Component {
       images: [
         {
           src: "https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863",
-          title:
-            "Image 1 Titledsfgfyiufysdiufyiusdyfiusydiufysdiufyiusyfiusyiufysiufyiusdyfiusdyiufysdiuyfiusdyfisyifysidyfiyifsdyifyifdy",
+          title: "Image 1",
         },
         {
           src: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/6PTUJPS75AI6XILXO5S7FGUVEQ.jpg&w=1440",
           title: "Image 2 Title",
-        },
-        {
-          src: "https://static.independent.co.uk/2023/01/21/04/10401865.jpg?quality=75&width=1200&auto=webp",
-          title: "Image 3 Title",
         },
       ],
       show: false,
@@ -65,7 +60,7 @@ class CustomSlider extends React.Component {
           show: false,
         });
         this.fetchNews();
-      }, 5000);
+      }, 60000);
     });
 
     this.interval = setInterval(() => {
@@ -73,7 +68,7 @@ class CustomSlider extends React.Component {
       const newIndex = (imageIndex + 1) % images.length;
       this.setState({ imageIndex: newIndex });
       console.log("kjfdgfds");
-    }, 20000); // 60,000 milliseconds = 1 minute
+    }, 60000); // 60,000 milliseconds = 1 minute
   }
 
   componentWillUnmount() {
