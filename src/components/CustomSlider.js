@@ -60,7 +60,7 @@ class CustomSlider extends React.Component {
           show: false,
         });
         this.fetchNews();
-      }, 60000);
+      }, 7000);
     });
 
     this.interval = setInterval(() => {
@@ -68,7 +68,7 @@ class CustomSlider extends React.Component {
       const newIndex = (imageIndex + 1) % images.length;
       this.setState({ imageIndex: newIndex });
       console.log("kjfdgfds");
-    }, 60000); // 60,000 milliseconds = 1 minute
+    }, 5000); // 60,000 milliseconds = 1 minute
   }
 
   componentWillUnmount() {
